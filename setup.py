@@ -8,7 +8,8 @@ setup(
     install_requires=["OpenWifi"],
     entry_points="""
     [OpenWifi.plugin]
-    testplugin=testplugin:getPlugin
+    addPluginRoutes=testplugin:addPluginRoutes
+    addJobserverTasks=testplugin:addJobserverTasks
     """,
     packages=find_packages(),
     include_package_data=True,
