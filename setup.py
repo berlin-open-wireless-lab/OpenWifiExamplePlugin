@@ -10,6 +10,7 @@ setup(
     [OpenWifi.plugin]
     addPluginRoutes=testplugin:addPluginRoutes
     addJobserverTasks=testplugin:addJobserverTasks
+    models=testplugin:modelString
     """,
     packages=find_packages(),
     include_package_data=True,

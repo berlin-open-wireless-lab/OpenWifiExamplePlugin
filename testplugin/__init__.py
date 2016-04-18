@@ -1,3 +1,5 @@
+modelString = 'testplugin.models'
+
 def addPluginRoutes(config):
     config.add_route('testplugin', '/testplugin')
     return "Testplugin"
