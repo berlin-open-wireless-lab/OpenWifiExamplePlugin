@@ -11,6 +11,7 @@ setup(
     addPluginRoutes=testplugin:addPluginRoutes
     addJobserverTasks=testplugin:addJobserverTasks
     models=testplugin:modelString
+    globalPluginViews=testplugin:globalTestpluginViews
     """,
     packages=find_packages(),
     include_package_data=True,

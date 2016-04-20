@@ -1,4 +1,5 @@
 modelString = 'testplugin.models'
+globalTestpluginViews = [['testplugin', 'Testplugin']]
 
 def addPluginRoutes(config):
     config.add_route('testplugin', '/testplugin')
