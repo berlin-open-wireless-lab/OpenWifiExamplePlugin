@@ -48,8 +48,3 @@ def testplugin_assign(request):
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
-
-@view_config(route_name='testplugin_testtask', renderer='templates/test.jinja2', layout='base')#, permission='view')
-def testTaskCall(request):
-    testTask = signature('testplugin.testLongTask')
-    testTask.delay()
