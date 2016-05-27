@@ -11,7 +11,7 @@ from .models import TestPluginClass
 import string
 import random
 
-@view_config(route_name='testplugin', renderer='templates/test.jinja2', layout='base')#, permission='view')
+@view_config(route_name='testplugin', renderer='templates/test.jinja2', layout='base', permission='view')
 def testplugin(request):
 
     # run a test Task
@@ -34,7 +34,7 @@ def testplugin(request):
             'idfield': 'uuid'
             }
 
-@view_config(route_name='testplugin_assign', renderer='templates/testAssign.jinja2', layout='base')#, permission='view')
+@view_config(route_name='testplugin_assign', renderer='templates/testAssign.jinja2', layout='base', permission='view')
 def testplugin_assign(request):
     if request.POST:
         uuid = request.matchdict['uuid']
