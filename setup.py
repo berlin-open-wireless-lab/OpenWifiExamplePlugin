@@ -12,6 +12,7 @@ setup(
     addJobserverTasks=testplugin:addJobserverTasks
     models=testplugin:modelString
     globalPluginViews=testplugin:globalTestpluginViews
+    onDeviceRegister=testplugin:testOnDeviceRegister
     """,
     packages=find_packages(),
     include_package_data=True,
