@@ -13,6 +13,7 @@ setup(
     models=testplugin:modelString
     globalPluginViews=testplugin:globalTestpluginViews
     onDeviceRegister=testplugin:testOnDeviceRegister
+    communication=testplugin:ExampleTextFileCommunication
     """,
     packages=find_packages(),
     include_package_data=True,
